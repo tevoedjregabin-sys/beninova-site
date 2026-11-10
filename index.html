@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://tevoedjregabin-sys.github.io/beninova-site/">
 <meta name="twitter:card" content="summary">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1020'/%3E%3Ctext x='50' y='68' font-size='58' font-weight='900' text-anchor='middle' fill='%23f5bd55' font-family='Arial'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1020'/%3E%3Ctext x='50' y='68' font-size='58' font-weight='900' text-anchor='middle' fill='%23f5bd55' font-family='Arial'%3EB%3C/text%3E%3C/svg%3E">
 
 <style>
 :root{
@@ -56,4 +56,249 @@ nav{
 }
 h1{font-size:clamp(38px,6vw,65px);line-height:1.1;margin:22px 0}
 h1 span{color:var(--gold)}
-.hero p{color:var(--muted);font-s
+.hero p{color:var(--muted);font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-block;padding:13px 21px;border-radius:10px;
+  font-weight:bold;background:var(--gold);color:#172033;
+  border:0;cursor:pointer;font-size:15px;font-family:inherit;
+}
+.btn:hover{filter:brightness(1.08)}
+.btn.secondary{background:#ffffff12;color:white;border:1px solid #ffffff30}
+.visual{
+  min-height:320px;border-radius:28px;padding:28px;
+  background:radial-gradient(circle at top right,#6650bd,#172b52 55%,#10172a);
+  display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:0 20px 60px #0005;
+}
+.visual strong{font-size:34px;line-height:1.2}
+.visual .symbol{font-size:75px;text-align:center}
+section{max-width:1150px;margin:auto;padding:65px 5%}
+.section-head{text-align:center;margin-bottom:35px}
+.section-head h2{font-size:32px;margin:8px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:var(--panel);border:1px solid #ffffff12;
+  padding:24px;border-radius:17px;transition:.2s;
+}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card .emoji{font-size:34px}
+.card h3{margin:12px 0 7px}
+.card p{color:var(--muted);font-size:14px}
+.card .btn{margin-top:10px;font-size:13px;padding:10px 14px}
+.price{color:var(--gold);font-weight:bold;font-size:18px}
+.price small{display:block;color:var(--muted);font-weight:normal;font-size:12px}
+.search{
+  width:100%;padding:15px;border-radius:10px;
+  border:1px solid #ffffff30;background:var(--panel);
+  color:white;margin:0 0 25px;font-size:16px;
+}
+.empty{display:none;text-align:center;color:var(--muted);margin-top:20px}
+.banner{
+  background:linear-gradient(120deg,#1c3157,#49378a);
+  border-radius:22px;padding:35px;text-align:center;
+}
+.banner h2{font-size:30px}
+.banner p{color:#dfe4f1}
+.contact-info{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  margin:18px 0 24px;
+}
+.contact-info a{
+  background:#ffffff14;border:1px solid #ffffff25;
+  padding:10px 18px;border-radius:30px;font-weight:bold;
+}
+.contact-info a:hover{border-color:var(--gold);color:var(--gold)}
+footer{
+  border-top:1px solid #ffffff20;padding:35px 5% 90px;
+  text-align:center;color:var(--muted);
+}
+footer strong{color:var(--gold)}
+.whatsapp{
+  position:fixed;right:18px;bottom:20px;z-index:20;
+  background:#20c878;color:#062b1b;border-radius:50px;
+  padding:14px 19px;font-weight:bold;box-shadow:0 5px 25px #0008;
+}
+@media(max-width:750px){
+  .hero{grid-template-columns:1fr;padding-top:55px}
+  .grid{grid-template-columns:1fr}
+  nav{flex-direction:column;gap:6px;padding:10px 5%}
+  .links{gap:18px;font-size:14px}
+  .logo{font-size:21px}
+  .visual{min-height:240px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a class="logo" href="#accueil">BENI<span>NOVA</span></a>
+<div class="links">
+<a href="#accueil">Accueil</a>
+<a href="#services">Services</a>
+<a href="#boutique">Boutique</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="accueil">
+<div>
+<span class="tag">LE NUMÉRIQUE À PORTÉE DE TOUS</span>
+<h1>Le numérique qui fait <span>avancer.</span></h1>
+<p>Bienvenue chez BENINOVA. Découvrez des solutions numériques, des ressources pratiques et des services pour vos études, votre carrière et vos projets au Bénin.</p>
+<div class="actions">
+<a class="btn" href="#boutique">Découvrir nos offres</a>
+<a class="btn secondary" href="#services">Nos services</a>
+</div>
+</div>
+<div class="visual">
+<span>VOTRE AVENIR COMMENCE ICI</span>
+<div class="symbol">🚀</div>
+<strong>Imaginez.<br>Apprenez.<br>Progressez.</strong>
+</div>
+</div>
+
+<section id="services">
+<div class="section-head">
+<span class="tag">NOS DOMAINES</span>
+<h2>Des solutions pour vos ambitions</h2>
+<p>Des ressources utiles pour les particuliers et les professionnels.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="emoji">🎓</div><h3>Études et formation</h3><p>Guides, modèles de documents et ressources pour les étudiants.</p></div>
+<div class="card"><div class="emoji">💼</div><h3>Emploi et carrière</h3><p>CV, lettres de motivation et accompagnement dans vos démarches.</p></div>
+<div class="card"><div class="emoji">🏪</div><h3>Entrepreneuriat</h3><p>Outils pratiques pour organiser et développer votre activité.</p></div>
+<div class="card"><div class="emoji">🤖</div><h3>Intelligence artificielle</h3><p>Découvrez des outils numériques et apprenez à mieux les utiliser.</p></div>
+<div class="card"><div class="emoji">📄</div><h3>Documents numériques</h3><p>Modèles et ressources téléchargeables selon vos besoins.</p></div>
+<div class="card"><div class="emoji">🌐</div><h3>Services numériques</h3><p>Des solutions pratiques pour vos besoins quotidiens.</p></div>
+</div>
+</section>
+
+<section id="boutique">
+<div class="section-head">
+<span class="tag">NOTRE BOUTIQUE</span>
+<h2>Découvrez nos ressources</h2>
+<p>Des solutions utiles, accessibles et adaptées à vos besoins.</p>
+</div>
+<input class="search" id="search" type="search" placeholder="Rechercher une ressource..." aria-label="Rechercher une ressource">
+<div class="grid" id="products">
+
+<div class="card product">
+<div class="emoji">📘</div>
+<h3>Pack CV professionnel</h3>
+<p>Des modèles pour préparer une candidature soignée.</p>
+<div class="price">À partir de 2 000 FCFA<small>Prix indicatif</small></div>
+<button class="btn order" data-item="Pack CV professionnel">Commander</button>
+</div>
+
+<div class="card product">
+<div class="emoji">📝</div>
+<h3>Pack étudiant</h3>
+<p>Des modèles et outils pour mieux organiser ses études.</p>
+<div class="price">À partir de 2 000 FCFA<small>Prix indicatif</small></div>
+<button class="btn order" data-item="Pack étudiant">Commander</button>
+</div>
+
+<div class="card product">
+<div class="emoji">📊</div>
+<h3>Pack entrepreneur</h3>
+<p>Des ressources pour préparer et organiser un projet.</p>
+<div class="price">À partir de 5 000 FCFA<small>Prix indicatif</small></div>
+<button class="btn order" data-item="Pack entrepreneur">Commander</button>
+</div>
+
+<div class="card product">
+<div class="emoji">🤖</div>
+<h3>Guide IA pratique</h3>
+<p>Une initiation aux outils d'intelligence artificielle.</p>
+<div class="price">À partir de 3 000 FCFA<small>Prix indicatif</small></div>
+<button class="btn order" data-item="Guide IA pratique">Commander</button>
+</div>
+
+<div class="card product">
+<div class="emoji">📂</div>
+<h3>Pack documents</h3>
+<p>Des modèles utiles pour vos démarches quotidiennes.</p>
+<div class="price">À partir de 2 500 FCFA<small>Prix indicatif</small></div>
+<button class="btn order" data-item="Pack documents">Commander</button>
+</div>
+
+<div class="card product">
+<div class="emoji">✨</div>
+<h3>Besoin personnalisé</h3>
+<p>Expliquez-nous votre besoin. Nous étudierons votre demande.</p>
+<div class="price">Sur devis<small>Réponse rapide</small></div>
+<button class="btn order" data-item="Demande personnalisée">Faire une demande</button>
+</div>
+
+</div>
+<p class="empty" id="empty">Aucune ressource trouvée. Écrivez-nous : nous pouvons peut-être la préparer pour vous.</p>
+</section>
+
+<section id="contact">
+<div class="banner">
+<span class="tag">NOUS SOMMES À VOTRE ÉCOUTE</span>
+<h2>Un projet ou une question ?</h2>
+<p>Contactez BENINOVA directement par WhatsApp ou par téléphone.</p>
+<div class="contact-info">
+<a href="tel:+2290154659771">📞 +229 01 54 65 97 71</a>
+<a href="https://wa.me/2290154659771" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+</div>
+<a class="btn" id="contactBtn" href="https://wa.me/2290154659771">Discuter avec BENINOVA</a>
+</div>
+</section>
+</main>
+
+<footer>
+<p><strong>BENINOVA</strong> — Le numérique qui fait avancer.</p>
+<p>Une plateforme de solutions numériques au Bénin.</p>
+<p>© <span id="year">2026</span> BENINOVA. Tous droits réservés.</p>
+</footer>
+
+<a class="whatsapp" id="waFloat" href="https://wa.me/2290154659771" aria-label="Contacter BENINOVA sur WhatsApp">WhatsApp</a>
+
+<script>
+"use strict";
+
+const WHATSAPP = "2290154659771";
+
+function contactWhatsApp(message) {
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+document.querySelectorAll(".order").forEach(button => {
+  button.addEventListener("click", () => {
+    contactWhatsApp("Bonjour BENINOVA, je souhaite des informations sur : " + button.dataset.item);
+  });
+});
+
+document.getElementById("contactBtn").addEventListener("click", event => {
+  event.preventDefault();
+  contactWhatsApp("Bonjour BENINOVA, je souhaite obtenir des renseignements.");
+});
+
+document.getElementById("waFloat").addEventListener("click", event => {
+  event.preventDefault();
+  contactWhatsApp("Bonjour BENINOVA !");
+});
+
+document.getElementById("search").addEventListener("input", event => {
+  const query = event.target.value.toLowerCase().trim();
+  let visible = 0;
+  document.querySelectorAll(".product").forEach(card => {
+    const match = card.textContent.toLowerCase().includes(query);
+    card.style.display = match ? "" : "none";
+    if (match) visible++;
+  });
+  document.getElementById("empty").style.display = visible === 0 ? "block" : "none";
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
